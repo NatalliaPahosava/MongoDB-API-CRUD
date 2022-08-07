@@ -24,7 +24,7 @@ app.delete('/delete-movie', async (req, res) => {
   const result = await deleteMovie(req.query)
   res.send(result)
 })
-
+  
 app.get('/get-movies', async (req, res) => {
   const data = await queryMovies()
   res.send(data)
