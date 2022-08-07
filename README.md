@@ -1,6 +1,6 @@
 # MongoDB Api
 
-This project showcases what we've learned to make an api that will access a "movie" collection in our mongoDB database
+This project showcases what we've learned to make an API that will access a "movie" collection in our MongoDB database
 
 ## To get started
 
