@@ -9,7 +9,7 @@ This project showcases what we've learned to make an API that will access a "mov
 + Add new movies by sending a valid JSON body to http://localhost:4001/add-movie and get movies by going to http://localhost:4001/get-movies
 
 ## How to install MongoDB local on Mac
-**In Terminal:**
+### In Terminal:
 1. Download Mongodb from Homebrew with - **brew tap mongodb/brew**
 2. Update Homebrew - **brew update**
 3. Install Mongodb from the downloaded tab - **brew install mongodb-community@5.0**
