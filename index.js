@@ -1,6 +1,6 @@
 import express from 'express'
 import cors from 'cors'
-import dotenv from "dotenv"
+import dotenv from 'dotenv'
 import { addMovie, queryMovies, deleteMovie, updateMovie } from './Movies.js'
 import { addEmployee } from './employees.js'
 dotenv.config()
@@ -8,8 +8,8 @@ const app = express()
 app.use(cors())
 app.use(express.json()) // for us to receive json in body for POST
 
-// const PORT = 4001
-app.listen(process.env.PORT, () => console.log('API running on ',process.env.PORT))
+const PORT = 4001
+app.listen(PORT, () => console.log('API running on ', PORT))
 // movie routes
 app.post('/add-movie', addMovie)
 app.put('/update-movie', updateMovie)
@@ -19,10 +19,7 @@ app.get('/get-movies', queryMovies)
 // employee routes
 app.post('/add-employee', addEmployee)
 
-
 app.get('/', (req, res) => res.send('Hey here is my API!!'))
-
-
 
 // import express from 'express'
 // import cors from 'cors'
@@ -57,7 +54,7 @@ app.get('/', (req, res) => res.send('Hey here is my API!!'))
 // //   res.send(result)})
 
 // app.get('/get-movies', queryMovies)
-  
+
 // // app.get('/get-movies', async (req, res) => {
 // //   const data = await queryMovies()
 // //   res.send(data)
