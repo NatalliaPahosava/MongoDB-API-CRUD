@@ -8,7 +8,7 @@ const app = express()
 app.use(cors())
 app.use(express.json()) // for us to receive json in body for POST
 
-const PORT = 4001
+const PORT = 4005
 app.listen(PORT, () => console.log('API running on ', PORT))
 // movie routes
 app.post('/add-movie', addMovie)
