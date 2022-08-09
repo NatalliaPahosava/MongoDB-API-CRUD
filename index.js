@@ -1,9 +1,9 @@
 import express from 'express'
 import cors from 'cors'
-
-import { addMovie, queryMovies, deleteMovie, updateMovie } from './movies.js'
+import dotenv from "dotenv"
+import { addMovie, queryMovies, deleteMovie, updateMovie } from './Movies.js'
 import { addEmployee } from './employees.js'
-
+dotenv.config()
 const app = express()
 app.use(cors())
 app.use(express.json()) // for us to receive json in body for POST
