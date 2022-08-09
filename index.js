@@ -1,14 +1,13 @@
 import express from 'express'
 import cors from 'cors'
-import dotenv from 'dotenv'
 import { addMovie, queryMovies, deleteMovie, updateMovie } from './Movies.js'
 import { addEmployee } from './employees.js'
-dotenv.config()
+
 const app = express()
 app.use(cors())
 app.use(express.json()) // for us to receive json in body for POST
 
-const PORT = 4005
+const PORT = process.env.PORT || 4011
 app.listen(PORT, () => console.log('API running on ', PORT))
 // movie routes
 app.post('/add-movie', addMovie)
